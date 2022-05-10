@@ -222,6 +222,7 @@ body {
     margin: 0;
     transition: 0.3s;
     letter-spacing: 0.03em;
+    min-width: 87px;
 }
 .plus-bg {
     background: #2B3541;
@@ -297,8 +298,11 @@ body {
     border: 1px solid rgba(43, 53, 65, 0.4);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     cursor: pointer;
+}
+.grid-container {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .active {
     background: linear-gradient(180deg, rgba(251, 241, 56, .7) 0%, rgba(253, 249, 182, 0.45) 100%);
@@ -309,10 +313,8 @@ body {
     font-size: 18px;
     color: #010101;
     opacity: .7;
-    margin: 20px 30px 50px 203px;
-}
-.grid-item-info {
-    margin-left: 30px;
+    display: flex;
+    justify-content: flex-end;
 }
 .grid-item-title {
     font-size: 18px;
@@ -379,7 +381,7 @@ body {
     display: flex;
     gap: 19px;
     width: 618px;
-    margin: 40px 274px 0;
+    margin: 40px auto 0;
 } 
 .subscribe-email {
     display: block;
@@ -568,7 +570,6 @@ footer {
     text-align: center;
     justify-content: space-between;
     padding: 37px 0 8px;
-    position: relative;
 }
 .footer-item {
     display: flex;
@@ -607,14 +608,14 @@ footer {
 .footer-nav a:hover::after {
     background: #2B3541;
 }
+.footer-button {
+    display: flex;
+    gap: 4.21vw;
+}
 .footer-social {
     display: flex;
-    gap: 2.04vw;
-}
-.footer-mail {
-    position: absolute;
-    right: 165px;
-    top: 53px;
+    align-items: center;
+    gap: 62px;
 }
 .mail {
     font-size: 16px;
@@ -738,9 +739,6 @@ hr {
     }
     .subscribe-title::before {
         left: 162px;
-    }
-    .subscribe-flex {
-        margin: 40px 186px 0;
     }
     .agreement {
         margin: 12px 187px 160px;
@@ -915,6 +913,9 @@ hr {
     .subscribe-title::before {
         left: 209px;
     }
+    .subscribe-flex {
+        margin: 0 auto;
+    }
     .subscribe-button {
         position: absolute;
         bottom: 40px;
@@ -923,10 +924,7 @@ hr {
     }
     .subscribe-email {
         width: 62%;
-        margin: 40px 102px 0;
-    }
-    .subscribe-flex {
-        margin: 0 88px;
+        margin: 40px auto;
     }
     .agreement {
         margin: 10px 191px 95px;
@@ -957,7 +955,7 @@ hr {
         gap: 54px;
     }
     .footer-social {
-        margin-left: 83.93vw;
+        justify-content: flex-end;
     }
     .footer-mail {
         top: 146px;
@@ -1006,6 +1004,7 @@ hr {
     .subscribe-title {
         font-size: 26px;
         padding: 59px 242px 0px;
+        min-width: 200px;
     }
     .subscribe-title::before {
         left: 241px;
