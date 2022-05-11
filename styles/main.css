@@ -1105,4 +1105,120 @@ hr {
         font-size: 12px;
     }
 }
-
+@media (max-width:568px) {
+    .banner-flex {
+        display: block;
+    }
+    .banner-info {
+        margin: 0 auto;
+        max-width: 92.55vw;
+    }
+    .banner-title {
+        font-size: 39px;
+    }
+    .banner-text {
+        max-width: 283px;
+    }
+    .banner-link {
+        padding: 25px 166px;
+    }
+    .banner-bg {
+        position: relative;
+        right: 0;
+        gap: 10px;
+        top: 40px;
+    }
+    .banner-bg-left {
+        width: 60.12vw;
+        height: 77.58vw;
+    }
+    .banner-bg-right {
+        width: 29.6vw;
+        height: 77.58vw;
+    }
+    .banner-bg-img {
+        width: 91.86vw;
+        height: 69.83vw;
+        top: 43px;
+    }
+    .events-card {
+        background-position: right;
+    }
+    .events-title {
+        margin-top: 125px;
+    }
+    .events-card:nth-child(1) {
+        height: 86.11vw;
+        background-image: url(../images/events-1.png);
+    }
+    .events-card:nth-child(2) {
+        height: 86.11vw;
+        background-image: url(../images/events-2.png);
+    }
+    .events-card:nth-child(3) {
+        height: 45.24vw;
+    }
+    .subscribe-box {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .subscribe-title {
+        padding: 41px 120px;
+        font-size: 34px;
+    }
+    .subscribe-title::before {
+        width: 36px;
+        height: 36px;
+        left: 113px;
+        top: 32px;
+    }
+    .subscribe-button {
+        left: 15px;
+        width: 94%;
+    }
+    .about-up {
+        display: block;
+    }
+    .about-up-img {
+        display: none;
+    }
+    .about-up-link {
+        display: none;
+    }
+    .about-down {
+        margin-bottom: 40px;
+    }
+    .mobiles {
+        display: block;
+    }
+    .img-mobiles {
+        display: block;
+        width: 91.67vw;
+        height: 52.19vw;
+        margin-top: 61px;
+    }
+    .footer-item {
+        display: block;
+    }
+    .footer-logo {
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-nav {
+        gap: 119px;
+        margin-top: 33px;
+    }
+    .footer-social {
+        justify-content: space-between;
+        margin-left: -0.07vw;
+    }
+    .mail::before {
+        left: -11px;
+    }
+    .footer-down {
+        display: block;
+    }
+    .footer-down {
+        text-align: center;
+    }
+}
