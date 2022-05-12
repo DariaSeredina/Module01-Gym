@@ -84,7 +84,6 @@ body {
 }
 .banner-info {
     margin-top: 189px;
-    width: 674px;
     margin-bottom: 160px;
 }
 .banner-title {
@@ -112,6 +111,7 @@ body {
     color: #2B3541;
     line-height: 1.5;
     margin-bottom: 33px;
+    max-width: 54%;
 }
 .banner-link {
     background-color: #FBF138;
@@ -121,6 +121,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
     padding: 23px 30px;
     display: inline-block;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
@@ -792,7 +793,6 @@ hr {
     .banner-info {
         margin-top: 59px;
         margin-bottom: 85px;
-        max-width: 359px;
     }
     .banner-title {
         margin-bottom: 40px;
@@ -1117,16 +1117,16 @@ hr {
     }
     .banner-info {
         margin: 0 auto;
-        max-width: 92.55vw;
     }
     .banner-title {
         font-size: 39px;
     }
     .banner-text {
-        max-width: 283px;
+        max-width: 94%;
     }
     .banner-link {
-        padding: 25px 166px;
+        padding: 25px 0;
+        display: block;
     }
     .banner-bg {
         position: relative;
@@ -1167,6 +1167,9 @@ hr {
     .schedule-grid {
         display: flex;
         flex-direction: column;
+    }
+    .schedule-title p {
+        margin-top: 34px;
     }
     .grid-item-info {
         display: flex;
@@ -1245,19 +1248,10 @@ hr {
     .banner-title {
         font-size: 37px;
     }
-    .banner-link {
-        padding: 25px 153px;
-    }
 }
 @media (max-width:480px) {
-    .banner-info {
-        max-width: 90.55vw;
-    }
     .banner-title {
         font-size: 32px;
-    }
-    .banner-link {
-        padding: 25px 121px;
     }
     .schedule-title {
         gap: 31.92vw;
@@ -1276,14 +1270,8 @@ hr {
     }
 }
 @media (max-width:428px) {
-    .banner-info {
-        max-width: 89.55vw;
-    }
     .banner-title {
         font-size: 28px;
-    }
-    .banner-link {
-        padding: 25px 98px;
     }
     .schedule-title {
         gap: 23.92vw;
@@ -1299,9 +1287,6 @@ hr {
     }  
 }
 @media (max-width:414px) {
-    .banner-link {
-        padding: 25px 89px;
-    }
     .schedule-title {
         gap: 20.92vw;
     }
@@ -1310,14 +1295,8 @@ hr {
     }  
 }
 @media (max-width:390px) {
-    .banner-info {
-        max-width: 88.55vw;
-    }
     .banner-title {
         font-size: 25px;
-    }
-    .banner-link {
-        padding: 25px 77px;
     }
     .schedule-title {
         gap: 16.92vw;
