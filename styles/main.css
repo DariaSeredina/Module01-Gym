@@ -304,10 +304,20 @@ body {
     padding-right: 24px;
     justify-content: space-between
 }
+.grid-item:hover {
+    border: none;
+    background: #F3F3F3;
+}
+.grid-item:hover .text-active {
+    display: block;
+}
 .active {
     background: linear-gradient(180deg, rgba(251, 241, 56, .7) 0%, rgba(253, 249, 182, 0.45) 100%);
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
     border: none;
+}
+.active:hover {
+    background: linear-gradient(180deg, rgba(251, 241, 56, .7) 0%, rgba(253, 249, 182, 0.45) 100%);
 }
 .grid-item-date {
     font-size: 18px;
@@ -327,6 +337,9 @@ body {
     font-size: 18px;
     line-height: 150%;
     color: #2B3541;
+}
+.text-active {
+    display: none;
 }
 .grid-item:nth-child(1) {
     grid-column: 1 / 2;
@@ -503,6 +516,9 @@ body {
 }
 .radio:checked + label::before{
    border-radius: 100%;
+}
+.adapt {
+    display: none;
 }
 .about-up {
     display: flex;
@@ -890,6 +906,7 @@ hr {
     }
     .schedule-title p {
         font-size: 16px;
+        margin-top: 36px;
     }
     .schedule-grid {
         grid-template-columns: repeat(2, 1fr); 
@@ -938,10 +955,7 @@ hr {
         width: auto;
     }
     .subscribe-button {
-        position: absolute;
-        bottom: 40px;
-        left: 169px;
-        width: 60%;
+        display: none;
     }
     .subscribe-email {
         width: 62%;
@@ -949,6 +963,9 @@ hr {
     }
     .agreement {
         padding-bottom: 148px;
+    }
+    .adapt {
+        display: block;
     }
     .about-up-title {
         font-size: 26px;
@@ -1168,6 +1185,9 @@ hr {
         display: flex;
         flex-direction: column;
     }
+    .schedule-title {
+        gap: 11.92vw;
+    }
     .schedule-title p {
         margin-top: 34px;
     }
@@ -1253,9 +1273,6 @@ hr {
     .banner-title {
         font-size: 32px;
     }
-    .schedule-title {
-        gap: 31.92vw;
-    }
     .grid-item-box {
         margin: 30px 20px 20px 0;
     }
@@ -1273,9 +1290,6 @@ hr {
     .banner-title {
         font-size: 28px;
     }
-    .schedule-title {
-        gap: 23.92vw;
-    }
     .subscribe-title {
         padding: 41px 75px;
     }
@@ -1287,9 +1301,6 @@ hr {
     }  
 }
 @media (max-width:414px) {
-    .schedule-title {
-        gap: 20.92vw;
-    }
     .footer-nav {
         gap: 42px;
     }  
@@ -1297,9 +1308,6 @@ hr {
 @media (max-width:390px) {
     .banner-title {
         font-size: 25px;
-    }
-    .schedule-title {
-        gap: 16.92vw;
     }
     .subscribe-title {
         padding: 41px 56px;
