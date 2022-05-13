@@ -302,11 +302,13 @@ body {
     cursor: pointer;
     padding-left: 2.31vw;
     padding-right: 24px;
-    justify-content: space-between
+    justify-content: space-between;
 }
 .grid-item:hover {
     border: none;
     background: #F3F3F3;
+    overflow: hidden;
+    justify-content: space-around;
 }
 .grid-item:hover .text-active {
     display: block;
@@ -318,6 +320,7 @@ body {
 }
 .active:hover {
     background: linear-gradient(180deg, rgba(251, 241, 56, .7) 0%, rgba(253, 249, 182, 0.45) 100%);
+    justify-content: space-between;
 }
 .grid-item-date {
     font-size: 18px;
@@ -745,9 +748,6 @@ hr {
     }
 }
 @media (max-width:1024px) {
-    .banner-info {
-        margin-top: 144px;
-    }
     .banner-title {
         margin-bottom: 20px;
         font-size: 39px;
@@ -772,7 +772,7 @@ hr {
         right: 121px;
     }
     .footer-nav {
-        gap: 60px;
+        gap: 35px;
     }
 }
 @media (max-width:835px) {
@@ -897,6 +897,10 @@ hr {
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: 333px 224px 224px;
     }
+    .hover:hover {
+        display: flex;
+        gap: 20px;
+    }
     .grid-item:nth-child(1) {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -989,9 +993,6 @@ hr {
     }
 }
 @media (max-width:768px) {
-    .banner-info {
-        margin-top: 5px;
-    }
     .banner-arrow {
         margin: 45px 0px;
         width: 44px;
@@ -1009,9 +1010,6 @@ hr {
         width: 49.07vw;
         height: 44.13vw;
         top: 90px;
-    }
-    .banner-info {
-        margin-bottom: -3px;
     }
     .subscribe-title {
         font-size: 26px;
@@ -1059,6 +1057,9 @@ hr {
         left: 46px;
         top: 46px;
     }
+    .footer-down {
+        font-size: 13px;
+    }
 }
 @media (max-width:601px) {
     .banner-arrow {
@@ -1069,9 +1070,6 @@ hr {
     }
     .subscribe-title::before {
         left: 37px;
-    }
-    .footer-nav {
-        gap: 45px;
     }
     .footer-social {
         margin-left: 79.93vw;
@@ -1144,12 +1142,14 @@ hr {
         margin-top: 34px;
     }
     .grid-item-info {
-        display: flex;
-        gap: 32px;
         margin-bottom: 20px;
     }
     .grid-item-box {
         margin: 50px 20px 20px 0;
+    }
+    .hover {
+        display: flex;
+        gap: 20px;
     }
     .subscribe-title {
         font-size: 34px;
@@ -1192,7 +1192,7 @@ hr {
         margin: 0 auto;
     }
     .footer-nav {
-        gap: 119px;
+        gap: 105px;
         margin-top: 33px;
     }
     .footer-social {
@@ -1252,4 +1252,12 @@ hr {
     .footer-nav {
         gap: 30px;
     }  
+    .footer-down {
+        font-size: 10px;
+    }
+}
+@media (max-width:375px) {
+    .footer-nav {
+        gap: 22px;
+    }
 }
