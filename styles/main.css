@@ -225,7 +225,7 @@ body {
     letter-spacing: 0.03em;
     min-width: 87px;
 }
-.plus-bg {
+.events-plus {
     background: #2B3541;
     width: 30px;
     height: 30px;
@@ -521,7 +521,7 @@ body {
 .radio:checked + label::before{
    border-radius: 100%;
 }
-.adapt {
+.subscribe-btn {
     display: none;
 }
 .about-up {
@@ -583,10 +583,10 @@ body {
     color: #2B3541;
     opacity: .6;
 }
-.mobiles {
+.about-down-link {
     display: none;
 }
-.img-mobiles {
+.about-down-img {
     display: none;
 }
 footer {
@@ -799,7 +799,7 @@ hr {
     .header-nav {
         display: none;
     }
-    .banner-flex {
+    .banner-box {
         display: flex;
     }
     .banner-info {
@@ -893,7 +893,7 @@ hr {
         font-size: 14px;
         margin: 24px;
     }
-    .plus-bg {
+    .events-plus {
         display: block;
     }
     .schedule-title h3 {
@@ -950,7 +950,7 @@ hr {
     .agreement {
         padding-bottom: 40px;
     }
-    .adapt {
+    .subscribe-btn {
         display: block;
         text-align: center;
         padding: 25px 0px;
@@ -1111,7 +1111,7 @@ hr {
     }
 }
 @media (max-width:568px) {
-    .banner-flex {
+    .banner-box {
         display: block;
     }
     .banner-info {
@@ -1203,10 +1203,10 @@ hr {
     .about-down {
         margin-bottom: 40px;
     }
-    .mobiles {
+    .about-down-link {
         display: block;
     }
-    .img-mobiles {
+    .about-down-img {
         display: block;
         width: 91.67vw;
         height: 52.19vw;
@@ -1325,7 +1325,7 @@ hr {
     .about-down {
         display: block;
     }
-    .img-mobiles {
+    .about-down-img {
         width: 86.67vw;
     }
     .footer-up {
