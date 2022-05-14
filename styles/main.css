@@ -640,7 +640,7 @@ footer {
 }
 .footer-button {
     display: flex;
-    gap: 4.21vw;
+    gap: 1.91vw;
 }
 .footer-social {
     display: flex;
@@ -776,7 +776,7 @@ hr {
         right: 121px;
     }
     .footer-nav {
-        gap: 35px;
+        gap: 36px;
     }
 }
 @media (max-width: 992px) {
@@ -999,6 +999,13 @@ hr {
     }
 }
 @media (max-width:768px) {
+    .banner-info {
+        margin-top: 6px;
+    }
+    .banner-title {
+        max-width: 360px;
+        font-size: 26px;
+    }
     .banner-arrow {
         margin: 45px 0px;
         width: 44px;
@@ -1016,6 +1023,15 @@ hr {
         width: 49.07vw;
         height: 44.13vw;
         top: 90px;
+    }
+    .events-text {
+        padding: 9px 0px;
+    }
+    .grid-item-text {
+        font-size: 12px;;
+    }
+    .text-active {
+        font-size: 12px;
     }
     .subscribe-box {
         padding-left: 25%;
@@ -1048,10 +1064,19 @@ hr {
         margin-top: 63px;
     }
     .footer-up {
-        gap: 26px;
+        gap: 36px;
+        padding: 37px 0;
     }
-    .footer-mail {
-        top: 120px;
+    .footer-nav a {
+        font-size: 12px;
+    }
+    .mail {
+        top: 0;
+        font-size: 12px;
+    }
+    .footer-down {
+        padding-bottom: 62px;
+        font-size: 10px;
     }
 }
 @media (max-width:736px) {
@@ -1065,9 +1090,6 @@ hr {
     }
     .subscribe-title::before {
         left: 17px;
-    }
-    .footer-down {
-        font-size: 13px;
     }
 }
 @media (max-width:601px) {
@@ -1087,9 +1109,6 @@ hr {
     .footer-social {
         margin-left: 79.93vw;
     }
-    .footer-down {
-        font-size: 12px;
-    }
 }
 @media (max-width:568px) {
     .banner-flex {
@@ -1097,10 +1116,6 @@ hr {
     }
     .banner-info {
         margin: 0 auto;
-    }
-    .banner-title {
-        font-size: 39px;
-        padding-right: 0;
     }
     .banner-text {
         max-width: 94%;
@@ -1194,9 +1209,6 @@ hr {
         height: 52.19vw;
         margin-top: 61px;
     }
-    .footer-up {
-        padding: 37px 0 22px;
-    }
     .footer-item {
         display: block;
     }
@@ -1205,8 +1217,8 @@ hr {
         margin: 0 auto;
     }
     .footer-nav {
-        gap: 105px;
         margin-top: 33px;
+        justify-content: space-between;
     }
     .footer-social {
         justify-content: space-between;
@@ -1220,54 +1232,30 @@ hr {
         text-align: center;
     }
 }
-@media (max-width:540px) {
-    .banner-title {
-        font-size: 37px;
-    }
+@media (max-width: 540px) {
     .subscribe-title::before {
         left: 32px;
     }
 }
 @media (max-width:480px) {
-    .banner-title {
-        font-size: 32px;
-    }
     .grid-item-box {
         margin: 30px 20px 20px 0;
     }
     .subscribe-title::before {
         left: 7px;
     }
-    .footer-nav {
-        gap: 75px;
-    }
 }
 @media (max-width:428px) {
-    .banner-title {
-        font-size: 28px;
-    }
     .subscribe-title::before {
         left: -15px;
     }
-    .footer-nav {
-        gap: 49px;
-    }  
 }
 @media (max-width:414px) {
-    .banner-title {
-        font-size: 27px;
-    }
     .subscribe-title::before {
         left: 7px;
-    }
-    .footer-nav {
-        gap: 42px;
-    }  
+    } 
 }
 @media (max-width:390px) {
-    .banner-title {
-        font-size: 25px;
-    }
     .subscribe-box {
         padding-left: 0;
         padding-right: 0;
@@ -1279,30 +1267,22 @@ hr {
     .subscribe-title::before {
         left: -3px;
     }
-    .footer-nav {
-        gap: 30px;
-    }  
-    .footer-down {
-        font-size: 10px;
-    }
 }
 @media (max-width:375px) {
-    .banner-title {
-        font-size: 24px;
-    }
     .subscribe-title::before {
         left: -8px;
     }
-    .footer-nav {
-        gap: 22px;
-    }
 }
 @media (max-width:360px) {
+    .container {
+        padding-right: 10px;
+        padding-left: 10px
+    }
     .header-item {
         gap: 48px;
     }
     .banner-title {
-        font-size: 23px;
+        font-size: 24px;
     }
     .events-dates {
         margin: 20px 30px 20px 13px;
@@ -1322,6 +1302,22 @@ hr {
         background-image: url(../images/events-3\(mobile\).png);
         height: 84.24vw;
     }
+    .grid-item-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .grid-item-image {
+        width: 35px;
+        height: 40px;
+    }
+    .grid-item-box {
+        margin: 0;
+    }
+    .grid-item-title {
+        font-size: 16px;
+        margin: 0;
+    }
     .subscribe-title::before {
         left: 9px;
     }
@@ -1331,10 +1327,11 @@ hr {
     .img-mobiles {
         width: 86.67vw;
     }
-    .footer-nav {
-        gap: 26px;
+    .footer-up {
+        gap: 0px;
+        padding: 32px 0;
     }
     .footer-nav a {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
