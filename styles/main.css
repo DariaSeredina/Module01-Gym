@@ -1284,6 +1284,9 @@ hr {
     .banner-title {
         font-size: 24px;
     }
+    .banner-bg-img {
+        top: 28px;
+    }
     .events-dates {
         margin: 20px 30px 20px 13px;
     }
@@ -1291,9 +1294,7 @@ hr {
         margin: -16px 221px 0 13px;
     }
     .events-link {
-        padding: 10px 10px;
-        font-size: 10px;
-        margin: 27px 10px 0 13px;
+        display: none;
     }
     .events-text {
         padding: 9px 0px;
@@ -1333,5 +1334,8 @@ hr {
     }
     .footer-nav a {
         font-size: 12px;
+    }
+    .footer-down {
+        padding-bottom: 17px;
     }
 }
