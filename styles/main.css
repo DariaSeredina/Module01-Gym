@@ -1141,7 +1141,7 @@ hr {
     .banner-bg-img {
         width: 91.86vw;
         height: 69.83vw;
-        top: 43px;
+        top: 10%;
     }
     .events-card {
         background-position: right;
@@ -1159,6 +1159,9 @@ hr {
     }
     .events-card:nth-child(3) {
         height: 45.24vw;
+    }
+    .events-link {
+        display: none;
     }
     .schedule-grid {
         display: flex;
@@ -1292,9 +1295,6 @@ hr {
     }
     .events-title-card {
         margin: -16px 221px 0 13px;
-    }
-    .events-link {
-        display: none;
     }
     .events-text {
         padding: 9px 0px;
